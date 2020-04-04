@@ -17,11 +17,11 @@ package main
 import (
 	"github.com/pulumi/pulumi-terraform-bridge/pkg/tfbridge"
 
-	xyz "github.com/pulumi/pulumi-xyz"
-	"github.com/pulumi/pulumi-xyz/pkg/version"
+	scaleway "github.com/dchauviere/pulumi-scaleway"
+	"github.com/dchauviere/pulumi-scaleway/pkg/version"
 )
 
 func main() {
 	// Modify the path to point to the new provider
-	tfbridge.Main("xyz", version.Version, xyz.Provider())
+	tfbridge.Main("scaleway", version.Version, scaleway.Provider())
 }
